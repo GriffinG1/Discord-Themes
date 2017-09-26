@@ -1,0 +1,391 @@
+/*Hide Blocked Messages*/
+/*.message-group-blocked {
+    display: none;    
+} */
+
+/*Avatar Growth*/
+.message-group .avatar-large {
+   border          : 3px solid rgba(0,0,0,0.2);
+   border-radius   : 0 !important;
+   background-size : cover !important;
+   transition      : all .9s ease !important;
+   opacity         : 1 !important;
+}
+.message-group .avatar-large:hover {
+   width           : 100px !important;
+   height          : 100px !important;
+}
+
+/*Hide Mention Badge*/
+.guild .badge, .btn-friends .badge {
+    visibility:hidden
+}
+
+/*Disable Embed Englarger*/
+.embed-wrapper:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/*Minimize Member List*/
+.channel-members{
+    transform:translate(145px);
+    z-index:2;
+    transition:all 300ms ease-in-out;
+}
+.channel-members:hover{
+    animation: member 300ms ease-in-out;
+    transform:translate(-7px);
+    background: #19191b !important;
+	box-shadow: 0px 1px 4px 0px #131313;
+}
+.channel-members:hover .old-h2{
+    font-size: 12px !important;
+}
+.channel-members .member .member-activity,
+.channel-members .member .member-username-inner{
+    opacity:0;
+    transition:opacity 300ms ease, margin 100ms ease;
+}
+.channel-members .member .member-username-inner{
+    margin-bottom: 6px;
+}
+.channel-members:hover .member .member-activity, .channel-members:hover .member .member-username-inner{
+    opacity:1;
+}
+.old-h2 {
+    font-size: 16px !important;
+}
+.channel-members h2{
+    transform-origin:left;
+    transform:scale(0.7);
+    transition: all 300ms ease;
+    background-color: transparent;
+    /*color: #fff !important;*/
+    padding: 6px;
+}
+.channel-members:hover h2{
+    transform:scale(1);
+    padding: 4px 58px;
+	margin-left: -6px
+}
+.channel-members .avatar-small{
+    transform:scale(1.2);
+}
+.channel-members:hover .avatar-small{
+    transform:scale(1);
+}
+.chat.flex-vertical.flex-spacer>.content.flex-spacer.flex-horizontal>.flex-spacer.flex-vertical{
+    margin-right:-145px !important;
+    z-index:1
+}
+.chat.flex-vertical.flex-spacer.private>.content.flex-spacer.flex-horizontal>.flex-spacer.flex-vertical{
+    margin-right:0px !important;
+    z-index:1
+}
+.channel-members:hover::-webkit-scrollbar { 
+	width: 4px !important 
+}
+.channel-members h2 {
+	margin-left: -6px !important;
+}
+.channel-members::after {
+	display: none;
+}
+[class*="scroller-"].channel-members {
+    height: 100% !important;
+    border-bottom: 2px solid #212121;
+}
+.channel-members-loading .background {
+    background: none !important;
+}
+
+/*Channel Hiding*/
+.channels-wrap{
+    position:absolute !important;
+    z-index:10 !important;
+    left:-228px !important;
+    transition: all ease-in-out .5s !important;
+    height:100% !important;
+    background:transparent !important;
+}
+.guilds-wrapper:hover + .channels-wrap {
+    left: 82px !important;
+    background:#121213 !important;
+}
+/* .context-menu.theme-dark:hover ~ .channels-wrap{ */
+    /* left: 82px !important; */
+    /* background:#121213 !important; */
+/* } */
+.guilds-wrapper {
+    z-index: 20 !important;
+}
+.channels-wrap:hover {
+    left: 82px !important;
+    background:#121213 !important;
+}
+.channel-name {
+    text-transform: none !important;
+}
+.header-1tSljs {
+    z-index:10 !important;
+}
+
+.flexChild-1KGW5q {
+    z-index: 5 !important;
+}
+
+.title-wrap {
+    z-index: 4 !important;
+}
+
+.guild-channels .channel-voice .channel-arrow {
+    order: 2 !important;
+    left: 10px !important;
+    top: 2px!important;
+}
+.guild-channels .channel-voice.collapsed .channel-arrow {
+    transform: rotate(-180deg) !important;
+}
+.account {
+    width: 100% !important;
+    margin-left: 0px !important;
+}
+
+/*REVERT BOTTOM BAR TO ORIGINAL LOOK*/
+
+.account{border-top:none !important;padding:0 15px !important;background:#19191b !important;border-top:1px solid #171719 !important;height:70px !important;margin-left:0px;width:100% !important;}
+
+.account:after{content:var(--version-content);color:rgba(255, 255, 255, 0.2);font-size:11px;font-weight:bold;position:absolute;left:180px;bottom:0;right:0;opacity:1;display:flex;justify-content:center;width: 20px;}
+
+.theme-dark .chat form{border-top:1px solid #171719 !important;border-left: 0px solid transparent !important; border-right: 0px transparent !important;}
+
+.scroller.guilds{height:calc(100% - 65px) !important;}
+
+.channel-members::after, #friends .friends-table .friends-table-body::after{display:none !important;}
+
+.container-iksrDt .avatar-small{margin-left:0px !important;}
+
+.container-iksrDt{margin-left:0px !important; width: calc(100% - 20px) !important;}
+
+.accountDetails-15i-_e{max-width:50px !important; margin-right:0px !important;}
+
+#friends .friends-table .friends-table-body{height:calc(100% - 65px) !important;}
+
+.scroller.channel-members{height:100% !important;}
+
+.theme-dark .channel-textarea-inner{border-left:0px solid #212121 !important;border-right:0px solid #212121 !important;}
+
+.guilds-wrapper .guilds-add{border: 0px solid transparent;position: fixed !important;bottom: 0px;width: 5px !important;border-radius: 0px;height: 25px !important;line-height: 1px;font-size: 0px !important;transition: .1s all linear;margin-left: 76px !important;margin-top: 0px !important;z-index:10 !important;}
+
+.guilds-add-inner{height: 10px !important;}
+
+.guilds-wrapper .guilds-add:hover{width: 74px !important;height: 25px !important;line-height: 0px;font-size: 25px !important;margin-left: 0px !important}
+
+.new-messages-indicator.bottom {display: none;}
+
+.status-picker.popout-menu {
+    background: #19191b !important;
+    border-radius:0!important;
+    width: 70px !important;
+    bottom:0px!important;
+    top:initial!important;
+    height: 220px !important;
+    display:block;
+    transition:all 150ms cubic-bezier(.5, 0, 0, 1);
+    animation:sttus 400ms ease;
+    pointer-events:auto;
+    z-index:1000000;
+    left: 2px!important;
+    position:fixed;
+    overflow:visible;
+    animation:StatusSlide .3s ease-in-out;
+    animation-fill-mode:forwards;
+    box-shadow:0px -2px 9px -2px #101010;
+    border-right: 2px solid #212121;
+    border-top: 2px solid #212121;
+    border-left: 2px solid #212121;
+}
+
+.status-picker .popout-menu-item:hover:nth-of-type(5) > .status-icon-text > .status-text {
+	margin-top:-38px !important;
+	margin-left: 0px !important;
+    z-index: 10 !important;
+}
+.status-picker .popout-menu-item:hover:nth-of-type(5) > .status-icon-text > .status-text:after {
+	margin-top:16px !important;
+	margin-left:-33px !important;
+    z-index: 10 !important;
+}
+.status-picker .popout-menu-item:hover:nth-of-type(4) > .status-icon-text > .status-text {
+	margin-top:-38px !important;
+	margin-left: 0px !important;
+    z-index: 10 !important;
+}
+.status-picker .popout-menu-item:hover:nth-of-type(4) > .status-icon-text > .status-text:after {
+	margin-top:16px !important;
+	margin-left:-55px !important;
+    z-index: 10 !important;
+}
+.status-picker .popout-menu-item:hover:nth-of-type(3) > .status-icon-text > .status-text {
+	margin-top:-38px !important;
+	margin-left: 0px !important;
+    z-index: 10 !important;
+}
+.status-picker .popout-menu-item:hover:nth-of-type(3) > .status-icon-text > .status-text:after {
+	margin-top:16px !important;
+	margin-left:-19px !important;
+    z-index: 10 !important;
+}
+.status-picker .popout-menu-item:hover:nth-of-type(1) > .status-icon-text > .status-text {
+	margin-top:-38px !important;
+	margin-left: 0px !important;
+    z-index: 10 !important;
+}
+.status-picker .popout-menu-item:hover:nth-of-type(1) > .status-icon-text > .status-text:after {
+	margin-top:16px !important;
+	margin-left:-26px !important;
+    z-index: 10 !important;
+}
+.container-iksrDt {
+    border-top: 1px solid #171719;
+    width: calc(100% - 13px);
+    margin-left: 0px;
+}
+[class*="scroller-"].channel-members {
+    height:100%;
+}
+.bf-toolbar .bf-arrow {
+    border-left: 2px solid #171719!important;
+    border-right: 2px solid #171719!important;
+    border-top: 2px solid #171719!important;
+}
+.bf-toolbar.bf-visible .bf-arrow, .bf-toolbar.bf-hover:hover .bf-arrow {
+    border-top: 2px solid #171719 !important;
+    border-right: 2px solid #171719 !important;
+    border-bottom: 2px solid #171719 !important;
+}
+.edit-container-inner .bf-toolbar:before {
+    border-right: 2px solid #171719 !important;
+}
+.bf-toolbar:before {
+    content: "";
+    width: 95% !important;
+    background: #19191b !important;
+    box-shadow: 0px 0px 0px 0px #0a0a0a !important;
+    border: 2px solid #171719 !important;
+    border-right: 0px solid transparent !important;
+    left: 6px !important;
+}
+
+/* Categories */
+div[class*=wrapperDefault-] > div[class*=nameCollapsed-],
+div[class*=wrapperDefault-] > div[class*=nameDefault-],
+div[class*=wrapperDefault-] > div[class*=nameHovered-],
+div[class*=wrapperDefault-] > div[class*=nameHoveredCollapsed-],
+div[class*=wrapperDefault-] > div[class*=nameMuted-],
+div[class*=wrapperDefault-] > div[class*=nameUnread-],
+div[class*=wrapperCollapsed-] > div[class*=nameCollapsed-],
+div[class*=wrapperCollapsed-] > div[class*=nameDefault-],
+div[class*=wrapperCollapsed-] > div[class*=nameHovered-],
+div[class*=wrapperCollapsed-] > div[class*=nameHoveredCollapsed-],
+div[class*=wrapperCollapsed-] > div[class*=nameMuted-],
+div[class*=wrapperCollapsed-] > div[class*=nameUnread-],
+div[class*=wrapperHovered-] > div[class*=nameCollapsed-],
+div[class*=wrapperHovered-] > div[class*=nameDefault-],
+div[class*=wrapperHovered-] > div[class*=nameHovered-],
+div[class*=wrapperHovered-] > div[class*=nameHoveredCollapsed-],
+div[class*=wrapperHovered-] > div[class*=nameMuted-],
+div[class*=wrapperHovered-] > div[class*=nameUnread-],
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameCollapsed-],
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameDefault-],
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameHovered-],
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameHoveredCollapsed-],
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameMuted-],
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameUnread-] {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  opacity: 0.3;
+  transition: .2s opacity ease-in-out;
+}
+div[class*=container-] > div[class*=containerDefault-]:first-child {
+  padding: 5px;
+}
+div[class*=wrapperDefault-],
+div[class*=wrapperHovered-],
+div[class*=wrapperDefault-],
+div[class*=wrapperHoveredCollapsed-] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div[class*=wrapperDefault-] > div[class*=nameCollapsed-]:hover,
+div[class*=wrapperDefault-] > div[class*=nameDefault-]:hover,
+div[class*=wrapperDefault-] > div[class*=nameHovered-]:hover,
+div[class*=wrapperDefault-] > div[class*=nameHoveredCollapsed-]:hover,
+div[class*=wrapperDefault-] > div[class*=nameMuted-]:hover,
+div[class*=wrapperDefault-] > div[class*=nameUnread-]:hover,
+div[class*=wrapperCollapsed-] > div[class*=nameCollapsed-]:hover,
+div[class*=wrapperCollapsed-] > div[class*=nameDefault-]:hover,
+div[class*=wrapperCollapsed-] > div[class*=nameHovered-]:hover,
+div[class*=wrapperCollapsed-] > div[class*=nameHoveredCollapsed-]:hover,
+div[class*=wrapperCollapsed-] > div[class*=nameMuted-]:hover,
+div[class*=wrapperCollapsed-] > div[class*=nameUnread-]:hover,
+div[class*=wrapperHovered-] > div[class*=nameCollapsed-]:hover,
+div[class*=wrapperHovered-] > div[class*=nameDefault-]:hover,
+div[class*=wrapperHovered-] > div[class*=nameHovered-]:hover,
+div[class*=wrapperHovered-] > div[class*=nameHoveredCollapsed-]:hover,
+div[class*=wrapperHovered-] > div[class*=nameMuted-]:hover,
+div[class*=wrapperHovered-] > div[class*=nameUnread-]:hover,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameCollapsed-]:hover,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameDefault-]:hover,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameHovered-]:hover,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameHoveredCollapsed-]:hover,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameMuted-]:hover,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameUnread-]:hover {
+  opacity: 0.8;
+}
+div[class*=wrapperDefault-] > div[class*=nameDefault-]:after,
+div[class*=wrapperDefault-] > div[class*=nameDefault-]:before,
+div[class*=wrapperDefault-] > div[class*=nameHovered-]:after,
+div[class*=wrapperDefault-] > div[class*=nameHovered-]:before,
+div[class*=wrapperDefault-] > div[class*=nameCollapsed-]:after,
+div[class*=wrapperDefault-] > div[class*=nameCollapsed-]:before,
+div[class*=wrapperDefault-] > div[class*=nameHoveredCollapsed-]:after,
+div[class*=wrapperDefault-] > div[class*=nameHoveredCollapsed-]:before,
+div[class*=wrapperCollapsed-] > div[class*=nameDefault-]:after,
+div[class*=wrapperCollapsed-] > div[class*=nameDefault-]:before,
+div[class*=wrapperCollapsed-] > div[class*=nameHovered-]:after,
+div[class*=wrapperCollapsed-] > div[class*=nameHovered-]:before,
+div[class*=wrapperCollapsed-] > div[class*=nameCollapsed-]:after,
+div[class*=wrapperCollapsed-] > div[class*=nameCollapsed-]:before,
+div[class*=wrapperCollapsed-] > div[class*=nameHoveredCollapsed-]:after,
+div[class*=wrapperCollapsed-] > div[class*=nameHoveredCollapsed-]:before,
+div[class*=wrapperHovered-] > div[class*=nameDefault-]:after,
+div[class*=wrapperHovered-] > div[class*=nameDefault-]:before,
+div[class*=wrapperHovered-] > div[class*=nameHovered-]:after,
+div[class*=wrapperHovered-] > div[class*=nameHovered-]:before,
+div[class*=wrapperHovered-] > div[class*=nameCollapsed-]:after,
+div[class*=wrapperHovered-] > div[class*=nameCollapsed-]:before,
+div[class*=wrapperHovered-] > div[class*=nameHoveredCollapsed-]:after,
+div[class*=wrapperHovered-] > div[class*=nameHoveredCollapsed-]:before,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameDefault-]:after,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameDefault-]:before,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameHovered-]:after,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameHovered-]:before,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameCollapsed-]:after,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameCollapsed-]:before,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameHoveredCollapsed-]:after,
+div[class*=wrapperHoveredCollapsed-] > div[class*=nameHoveredCollapsed-]:before {
+  content: "";
+  width: 100%;
+  vertical-align: middle;
+  height: 1.1px;
+  background: #eee;
+  display: inline-block;
+  margin: 0 5px;
+}
