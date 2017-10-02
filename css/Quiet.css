@@ -1813,7 +1813,7 @@ button.bd-customicon-settings{display:none;}
 
 }
 
-@media screen and (max-width:970px){.guilds-wrapper{position:absolute;z-index:5;left:-109px;transition:left ease .5s;height:100%;background:transparent;border-right:solid transparent 50px;}
+ +@media screen and (max-width:970px){.guilds-wrapper{position:absolute;z-index:5;left:-109px;transition:left ease .5s;height:100%;background:transparent;border-right:solid transparent 50px;}
 
 .guilds-wrapper:hover{left:0;background:#121213 !important;border-right:0px solid transparent;}
 
@@ -1875,7 +1875,6 @@ button.bd-customicon-settings{display:none;}
 
 .guilds-wrapper .scroller-wrap{width: 75px;}
 
-	
 }
 
 @media screen and (max-width:850px){.chat .content .flex-spacer.flex-vertical:only-child .message-group .comment .markup, .chat .content .flex-spacer.flex-vertical:not(:only-child) .message-group .comment .markup{max-width:80%;}
