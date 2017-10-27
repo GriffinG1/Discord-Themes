@@ -394,3 +394,42 @@ div[class*=wrapperHoveredCollapsed-] > div[class*=nameHoveredCollapsed-]:before 
   display: inline-block;
   margin: 0 5px;
 }
+
+/*Fix this god damn shit with discord*/
+.container-RYiLUQ {
+    background-color: #19191b !important;
+}
+.theme-dark .title-qAcLxz {
+    background: #19191b;
+} 
+.appMount-14L89u {
+    background-color: #19191b;
+}
+.theme-dark .chat form {
+    box-shadow: 0 0;
+    height: 70px;
+    margin-left: -3px;
+    background-color: #19191b;
+}
+.theme-dark .headerBar-cxbhPD {
+    background: #19191b;
+}
+.channels-3g2vYe {
+    background-color: #19191b;
+}
+.app .guilds .guild:first-child {
+    margin-top: 22px;
+}
+.typeWindows-15E0Ys {
+    padding-top: 4px;
+    background: #1e1f20;
+    margin-top: 0px;
+}
+.theme-dark [class*=chat] [class*=title-]{
+    background: #19191b;
+    box-shadow: 0 0 !important;
+    border-bottom: 2px solid var(--main-color);
+}
+.title-qAcLxz, .titleCall-3X0yGQ {
+    height: 46px;
+}
